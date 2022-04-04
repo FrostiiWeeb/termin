@@ -20,13 +20,13 @@ import termin
 parser = termin.Termin()
 
 # Register the command to the parser
-@parser.command('hello', describe=termin.Describe(usage=termin.Usage(arguments=[]), 'Prints hello world')) # leave arguments empty as there are no arguments
+@parser.command('hello', describe=termin.Describe(usage=termin.Usage('Prints hello world', arguments=[]))) # leave arguments empty as there are no arguments
 async def hello(ctx: termin.Context) -> None:
     # Respond with "Hello, World!"
     await ctx.print("Hello, World!")
 
 # Register an echo command to the parser
-@parser.command('echo', describe=termin.Describe(usage=termin.Usage(arguments=[termin.Argument('text', 'The text to print')]), 'Echo the given text'))
+@parser.command('echo', describe=termin.Describe(usage=termin.Usage('Echo the given text', arguments=[termin.Argument('text', 'The text to print')])))
 async def echo(ctx: termin.Context) -> None:
 	# Get the text argument
 	text = ctx.get_argument('text')
