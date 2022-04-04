@@ -1,5 +1,5 @@
 # Termin
-Termin is designed to be an easy to use vli maker that uses the modernic ``async`` and ``await`` syntax.
+Termin is designed to be an easy to use cli maker that uses the modernic ``async`` and ``await`` syntax.
 
 This library aims to make it simple for you to make your own CLI and provide
 all the utilities and functions you need to help make this job easier.
