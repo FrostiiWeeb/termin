@@ -5,9 +5,9 @@ This library aims to make it simple for you to make your own CLI and provide
 all the utilities and functions you need to help make this job easier.
 
 ## Features
-- [x] Modernic ``async`` and ``await`` syntax
+- [x] Modernic ``async`` and ``await`` syntax.
 - [x] Optimised in both speed and memory.
-- [x] Easy to use
+- [x] Easy to use.
 
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Termin.
