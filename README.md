@@ -37,7 +37,6 @@ async def echo(ctx: termin.Context) -> None:
 # Run the parser
 parser.run(args=sys.argv[1:])
 ```
-```
 
 ## Issues
 If you find any bugs, issues, or unexpected behaviour while using the library,
