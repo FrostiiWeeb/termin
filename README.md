@@ -29,7 +29,7 @@ async def hello(ctx: termin.Context) -> None:
 @parser.command('echo', describe=termin.Describe(usage=termin.Usage('Echo the given text', arguments=[termin.Argument('text', 'The text to print')])))
 async def echo(ctx: termin.Context) -> None:
 	# Get the text argument
-	text = ctx.get_argument('text')
+	text = ctx.arguments.get('text')
 
 	# Respond with the text
 	await ctx.print(text)
